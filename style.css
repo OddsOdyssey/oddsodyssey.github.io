@@ -1,0 +1,106 @@
+/* Размещение */
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #003366;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+footer {
+  background-color: #003366;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+/* Заголовок */
+h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+/* Навигация */
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0 1rem;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Кнопки */
+button {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 0.5rem;
+  color: #003366;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #003366;
+  color: #ffffff;
+}
+
+/* Интересные элементы */
+main:before {
+  content: "";
+  background-image: url("OddsOdyssey.jpg");
+  background-size: cover;
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+opacity: 0.5;
+z-index: -1;
+}
+
+main p {
+font-size: 2rem;
+margin: 2rem;
+}
+
+main button:first-of-type {
+transform: rotate(-5deg);
+}
+
+main button:last-of-type {
+transform: rotate(5deg);
+}
